@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+    height: 100%;
+    font-family: 'Nunito'; 
+
+}
+
+.pageparent {
+    padding: 10px 10px;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/fonts/Nunito-Regular.ttf');
+}

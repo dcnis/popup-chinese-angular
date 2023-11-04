@@ -1,0 +1,22 @@
+<div class="pageparent">
+  <mat-selection-list>
+    <div mat-subheader>Menu</div>
+    <mat-list-item [routerLink]="'/dashboard'">
+      <mat-icon matListItemIcon>folder</mat-icon>
+      <div matListItemTitle>Dashboard</div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+
+    <mat-list-item [routerLink]="'/lessons'">
+        <mat-icon matListItemIcon>folder</mat-icon>
+        <div matListItemTitle>Lessons</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+      <mat-list-item [routerLink]="'/settings'">
+        <mat-icon matListItemIcon>folder</mat-icon>
+        <div matListItemTitle>Settings</div>
+      </mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-selection-list>
+</div>

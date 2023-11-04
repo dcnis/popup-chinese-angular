@@ -1,31 +1,35 @@
-<mat-sidenav-container class="example-container" fullscreen>
-  <!-- Sidenav Content -->
-  <mat-sidenav #sidenav mode="over"> Sidenav content </mat-sidenav>
+<div class="pageparent">
+  <mat-sidenav-container class="example-container" fullscreen>
+    <!-- Sidenav Content -->
+    <mat-sidenav #sidenav mode="over">
+      <app-menu></app-menu>
+    </mat-sidenav>
 
-  <mat-sidenav-content>
-    <mat-toolbar>
-      <!-- Main Content -->
-      <button
-        mat-icon-button
-        class="example-icon"
-        aria-label="Example icon-button with menu icon"
-        (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>Dashboard</span>
-      <span class="example-spacer"></span>
+    <mat-sidenav-content>
+      <mat-toolbar>
+        <!-- Main Content -->
+        <button
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with menu icon"
+          (click)="sidenav.toggle()"
+        >
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Dashboard</span>
+        <span class="example-spacer"></span>
 
-      <button
-        mat-icon-button
-        class="example-icon search-icon"
-        aria-label="Search"
-      >
-        <mat-icon>search</mat-icon>
-      </button>
-    </mat-toolbar>
+        <button
+          mat-icon-button
+          class="example-icon search-icon"
+          aria-label="Search"
+        >
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-toolbar>
 
-    <!-- Load main content via Router -->
-    <router-outlet></router-outlet>
-
-  </mat-sidenav-content>
-</mat-sidenav-container>
+      <!-- Load main content via Router -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
