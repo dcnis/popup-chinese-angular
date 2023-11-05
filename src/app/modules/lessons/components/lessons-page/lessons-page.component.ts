@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./lessons-page.component.scss']
 })
 export class LessonsPageComponent {
-
+  lessons: any[] = [
+    {
+      title: "First Lesson",
+      level: "Absolute Beginner",
+      imageUrl: "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      title: "Second Lesson",
+      level: "Absolute Beginner",
+      imageUrl: "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+    {
+      title: "Third Lesson",
+      level: "Absolute Beginner",
+      imageUrl: "https://material.angular.io/assets/img/examples/shiba2.jpg"
+    },
+  ]
 }

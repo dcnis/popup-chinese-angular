@@ -1,3 +1,31 @@
 <div class="pageparent">
-    <p>lessons-page works!</p>
+
+    <mat-form-field>
+        <mat-label>Level</mat-label>
+        <mat-select [value]="'absolute_beginner'">
+          <mat-option value="absolute_beginner">Absolute Beginner</mat-option>
+          <mat-option value="elementary">Elementary</mat-option>
+          <mat-option value="intermediate">Intermediate</mat-option>
+          <mat-option value="advanced">Advanced</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    <div *ngFor="let lesson of lessons" class="lessonLayout">
+        <mat-card class="example-card" matRipple>
+            <mat-card-header>
+                <img mat-card-sm-image src="{{lesson.imageUrl}}">
+              <mat-card-title-group>
+                <mat-card-title>{{lesson.title}}</mat-card-title>
+                <mat-card-subtitle>{{ lesson.level }}</mat-card-subtitle>
+              </mat-card-title-group>
+            </mat-card-header>
+            <mat-card-content>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button>Like</button>
+                <button mat-button>Share</button>
+              </mat-card-actions>
+          </mat-card>
+    </div>
+
 </div>

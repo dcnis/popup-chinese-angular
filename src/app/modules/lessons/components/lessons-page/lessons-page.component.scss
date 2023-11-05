@@ -1,0 +1,12 @@
+
+.example-card {
+    margin-bottom: 8px;
+  }
+
+mat-card-header > img {
+    margin-right: 10px;
+}
+
+mat-card:hover {
+    background-color: rgba(0,0,0,0);
+}
