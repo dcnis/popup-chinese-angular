@@ -1,22 +1,23 @@
 <div class="pageparent">
-  <mat-selection-list>
+  <mat-nav-list>
     <div mat-subheader>Menu</div>
-    <mat-list-item [routerLink]="'/dashboard'">
+
+    <mat-list-item (click)="navigateTo('/dashboard')">
       <mat-icon matListItemIcon>folder</mat-icon>
       <div matListItemTitle>Dashboard</div>
-    </mat-list-item>
+    </mat-list-item>    
     <mat-divider></mat-divider>
 
-    <mat-list-item [routerLink]="'/lessons'">
+    <mat-list-item (click)="navigateTo('/lessons')">
         <mat-icon matListItemIcon>folder</mat-icon>
         <div matListItemTitle>Lessons</div>
       </mat-list-item>
       <mat-divider></mat-divider>
 
-      <mat-list-item [routerLink]="'/settings'">
+      <mat-list-item (click)="navigateTo('/settings')">
         <mat-icon matListItemIcon>folder</mat-icon>
         <div matListItemTitle>Settings</div>
       </mat-list-item>
     <mat-divider></mat-divider>
-  </mat-selection-list>
+  </mat-nav-list>
 </div>
