@@ -7,7 +7,7 @@ import { CoreModule } from './core/core.module';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import {NgIf, NgFor} from '@angular/common';
+import {NgIf } from '@angular/common';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
